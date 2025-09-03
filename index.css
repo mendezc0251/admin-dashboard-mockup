@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 img{
-    max-width:48px;
+    width:48px;
+    
 }
 
 .profile-pic{
@@ -36,14 +37,55 @@ body{
     background-color:grey;
 }
 
+.sidebar img{
+    filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(140deg) brightness(102%) contrast(101%);
+}
+
 .sidebar p{
     display:grid;
     grid-template-columns:.2fr auto;
     align-items:center;
     align-content:start;
     margin:0;
+    gap:10px;
 }
 
 .sidebar-top{
     font-size:2.5rem;
+}
+
+.sidebar-top img{
+    width:90px;
+}
+
+.header p{
+    margin:0;
+}
+
+.header{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+}
+
+.header-search{
+    display:grid;
+    grid-template-columns: .1fr 3fr;
+    align-items:center;
+    align-content:start;
+    justify-content:start;
+}
+
+.header-search input{
+    border-radius:12px;
+    border:none;
+    background-color:rgb(170, 170, 170);
+    height:1.8rem;
+}
+
+.header-notifs{
+    display:grid;
+    grid-template-columns:.8fr auto auto auto auto;
+    align-items:center;
+    align-content:start;
+    justify-items:center;
 }
