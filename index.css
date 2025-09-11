@@ -31,10 +31,14 @@ body{
     align-content:start;
     padding:20px;
     gap:30px;
+    z-index:1;
 }
 
 .main{
-    background-color:grey;
+    background-color:rgb(207,207,207);
+    grid-column:2/3;
+    grid-row:2/3;
+    display:grid;
 }
 
 .sidebar img{
@@ -63,9 +67,13 @@ body{
 }
 
 .header{
+    grid-column:2/3;
+    grid-row:1/2;
+    box-shadow: 0px 4px 15px grey;
     display:grid;
     grid-template-columns:2fr 1fr;
     grid-template-rows:.5fr 1fr;
+    z-index:1;
 }
 
 .header-search{
@@ -84,7 +92,7 @@ body{
 .header-search input{
     border-radius:12px;
     border:none;
-    background-color:rgb(170, 170, 170);
+    background-color:rgb(207, 207, 207);
     height:1.8rem;
 }
 
