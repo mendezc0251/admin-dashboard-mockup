@@ -105,6 +105,20 @@ body{
 .announcement-card{
     background:white;
     border-radius:10px;
+    display:grid;
+    align-content:center;
+    gap:2rem;
+    padding:1rem;
+}
+
+.announcement p{
+    font-size:1rem;
+    margin:0;
+}
+
+.announcement p:first-child{
+    font-size:1.5rem;
+    margin:0;
 }
 
 .main-trending{
@@ -119,6 +133,18 @@ body{
 .trending-card{
     background:white;
     border-radius:10px;
+    display:grid;
+}
+
+.trending{
+    display:grid;
+    grid-template-columns:.5fr 1fr;
+    place-items:center;
+}
+
+.trending p{
+    font-size:1.3rem;
+    margin:0;
 }
 
 .sidebar img{
